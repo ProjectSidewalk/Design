@@ -22,4 +22,8 @@ This is the Project Sidewalk repo for design assets.
 # Acknowledgments
 Original logos and branding vision by the amazing [Rachael Marr](https://www.rachaelmarr.com/). 
 
+Project Sidewalk's original UI was designed and developed by [Kotaro Hara](https://kotarohara.com/) and Jon E. Froehlich as part of Kotaro's [PhD dissertation](https://makeabilitylab.cs.washington.edu/media/publications/Hara_ScalableMethodsToCollectAndVisualizeSidewalkAccessibilityDataForPeopleWithMobilityImpairments_2016.pdf)
+
+The new labeling buttons and color palette (introduced in 2021) were designed by the marvelous MHCI+D student [Duanhao Zhang](https://www.linkedin.com/in/danieldhzhang/)
+
 Others have since contributed on re-mixing logos for city-specific deployments including Liga Peatonal for Mexico-based deployments
