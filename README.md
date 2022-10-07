@@ -5,6 +5,10 @@ This is the Project Sidewalk repo for design assets.
 
 # Color Palette
 
+## Project Sidewalk Icon
+![image](https://user-images.githubusercontent.com/1621749/194599443-8e03a47e-60b3-44b5-aa03-a4b796c13fe0.png)
+
+## Labeling Buttons
 ![image](https://user-images.githubusercontent.com/1621749/190520417-3ae882d1-4ad2-465f-8b28-06f9401e0204.png) #ED1C24 | Alert<br/>
 ![image](https://user-images.githubusercontent.com/1621749/190520461-e63211b9-e199-4ccd-ae53-5ac542ee98ae.png) #90C31F | Curb Ramp Label<br/>
 ![image](https://user-images.githubusercontent.com/1621749/190520484-62c3bb94-6367-489d-a541-58c9145c6f67.png) #E679B6 | Missing Curb Ramp<br/>
@@ -16,7 +20,6 @@ This is the Project Sidewalk repo for design assets.
 ![image](https://user-images.githubusercontent.com/1621749/190520817-a55ee8d1-7f3f-4816-b560-d535e834a1a6.png) #B3B3B3 | Other<br/>
 ![image](https://user-images.githubusercontent.com/1621749/190520567-6b68c089-45cf-4957-8705-5815b7a18a35.png) #2D2A3F | Black<br/>
 ![image](https://user-images.githubusercontent.com/1621749/190520904-8769ddc3-223f-4e69-b89e-b14eff5bf899.png) #FFFFF | White<br/>
-
 
 
 # Acknowledgments
