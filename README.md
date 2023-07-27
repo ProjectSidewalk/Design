@@ -3,6 +3,17 @@
 
 This is the Project Sidewalk repo for design assets.
 
+# Design Principles
+**User education:** how can we continuously help users learn about urban design and accessibility assessment. Relatedly, how can we help them become more effective labelers. One great example of this is the [mission screen redesigns]([url](https://github.com/ProjectSidewalk/SidewalkWebpage/issues/3242)) but another is feedback—how can users get timely feedback on their performance so they can take corrective action. See [Section 1.1.2 of Jon's PhD dissertation]([url](https://makeabilitylab.cs.washington.edu/media/publications/Sensing_and_Feedback_of_Everyday_Activities_to_Promote_Environmental_Behaviors_Eye7nYF.pdf)).
+
+**Collective action:** how can we help people feel part of something bigger than themselves. For example, the sidebar should not just track my progress in a neighborhood but the overall progress of our collective efforts together. Being part of a community is a human need, and the best way to make a difference.
+
+**Fun, motivation, engagement.** how can we make the experience feel fun and engaging. What are current pain points (one you identified is the "overwhelm" that users might feel in starting or feelings of "anxiety" when they don't know how to label something). Sometimes, little UI tweaks (like animations) can help make an experience feel more cohesive and fun.
+
+**Making a difference.** how can/should we remind people of how their work can make a difference? How can we show the power of the data and its potential for diverse applications?
+
+**Human presence.** How can we better imbue the interface with feelings of empathy and that this task is fundamentally about helping people and improving cities. It would just be nice to have more human presence in the UX. This relates to: [#3083]([url](https://github.com/ProjectSidewalk/SidewalkWebpage/issues/3083))
+
 # Color Palette
 
 ## Project Sidewalk Icon
