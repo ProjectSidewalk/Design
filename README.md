@@ -32,6 +32,22 @@ This is the Project Sidewalk repo for design assets.
 ![image](https://user-images.githubusercontent.com/1621749/190520567-6b68c089-45cf-4957-8705-5815b7a18a35.png) #2D2A3F | Black<br/>
 ![image](https://user-images.githubusercontent.com/1621749/190520904-8769ddc3-223f-4e69-b89e-b14eff5bf899.png) #FFFFF | White<br/>
 
+# Logos
+We have two primary logo forms: the landscape logo and the circular logo. We have pure white, pure black, and colored versions.
+
+## Landscape logo
+
+<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Horizontal/PS_updatedMark.png" width="400">
+
+## Circular logo
+For the circular logo, we have with and without text as well as white, black, and colored versions. 
+
+<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/Final_Mark_Full_RGB_CurvedTextWithDotOrg.png" width="200">
+
+<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/Final_Mark_Full_RGB_NoText.png" width="200">
+
+## Landscape logo
+
 
 # Acknowledgments
 Original logos and branding vision by the amazing [Rachael Marr](https://www.rachaelmarr.com/). 
