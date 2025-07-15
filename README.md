@@ -42,9 +42,9 @@ We have two primary logo forms: the landscape logo and the circular logo. We hav
 ## Circular logo
 For the circular logo, we have with and without text as well as white, black, and colored versions. 
 
-<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/Final_Mark_Full_RGB_CurvedTextWithDotOrg.png" width="200">
+<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/v2/ProjectSidewalkLogo_WithCurvedText_3600x3600.png" width="200">
 
-<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/Final_Mark_Full_RGB_NoText.png" width="200">
+<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/v2/ProjectSidewalkLogo_NoText_3240x3240.png" width="200">
 
 ## Landscape logo
 
