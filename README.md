@@ -19,6 +19,16 @@ This is the Project Sidewalk repo for design assets.
 ## Project Sidewalk Icon
 ![image](https://user-images.githubusercontent.com/1621749/194599443-8e03a47e-60b3-44b5-aa03-a4b796c13fe0.png)
 
+| Color Name                    | Hex Code   |
+| :---------------------------- | :--------- |
+| **Hero Color** | `#2B2A3F`  |
+| Orange (Pantone 7417)| `#EB734D`  |
+| Yellow (Pantone 7403)| `#FBD78B`  |
+| Green (Pantone 7472)| `#78B9AB`  |
+| Gray (Pantone 435) | `#D0CBDB`  |
+
+
+
 ## Labeling Buttons
 ![image](https://user-images.githubusercontent.com/1621749/190520417-3ae882d1-4ad2-465f-8b28-06f9401e0204.png) #ED1C24 | Alert<br/>
 ![image](https://user-images.githubusercontent.com/1621749/190520461-e63211b9-e199-4ccd-ae53-5ac542ee98ae.png) #90C31F | Curb Ramp Label<br/>
