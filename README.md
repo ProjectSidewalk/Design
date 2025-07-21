@@ -1,5 +1,5 @@
 # Overview
-<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Horizontal/v2/PS_Logo_Horizontal_2387x624.png" width="600">
+<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Horizontal/v2/PS_Logo_Horizontal_2393x624.png" width="600">
 
 This is the Project Sidewalk repo for design assets.
 
@@ -47,7 +47,7 @@ We have two primary logo forms: the landscape logo and the circular logo. We hav
 
 ## Landscape logo
 
-<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Horizontal/v2/PS_Logo_Horizontal_2387x624.png" width="400">
+<img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Horizontal/v2/PS_Logo_Horizontal_2393x624.png" width="400">
 
 ## Circular logo
 For the circular logo, we have with and without text as well as white, black, and colored versions. 
