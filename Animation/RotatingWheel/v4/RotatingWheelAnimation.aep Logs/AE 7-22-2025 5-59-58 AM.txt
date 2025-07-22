@@ -1,0 +1,17 @@
+Adobe After Effects v25.3.2 Windows 64 render log for project “RotatingWheelAnimation.aep”
+
+Rendering started on 7/22/2025 at 5:59:58 AM
+
+  7/22/2025 5:59:58 AM: Starting composition “ProjectSidewalkLogo_NoText_WheelchairCircleCentered”.
+
+  Output To: D:\Git\ProjectSidewalk_Design\Animation\RotatingWheel\v4\ProjectSidewalkLogo_NoText_WheelchairCircleCentered.mp4    7/22/2025 5:59:59 AM: Finished composition “ProjectSidewalkLogo_NoText_WheelchairCircleCentered”.
+
+
+  7/22/2025 5:59:59 AM: Starting composition “ProjectSidewalkLogo_NoText_WheelchairCircleCentered”.
+
+  Output To: D:\Git\ProjectSidewalk_Design\Animation\RotatingWheel\v4\ProjectSidewalkLogo_NoText_WheelchairCircleCentered_1.mp4    7/22/2025 6:00:00 AM: Finished composition “ProjectSidewalkLogo_NoText_WheelchairCircleCentered”.
+
+
+  Total Time Elapsed: 2 Seconds
+Log closed on 7/22/2025 at 6:00:00 AM
+
