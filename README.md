@@ -59,6 +59,11 @@ For the circular logo, we have with and without text as well as white, black, an
 ## Landscape logo
 
 
+## Tool logos
+Each tool (AccessScore, Gallery, Label Map and Reports) has its own mark, drawn as one family from the logo's colors and wheel. The SVG masters, PNG exports and the design notes are in [Logos/Logo_Tools](Logos/Logo_Tools).
+
+<img src="Logos/Logo_Tools/Final/access-score.svg" width="64" alt="AccessScore logo"> <img src="Logos/Logo_Tools/Final/gallery.svg" width="64" alt="Gallery logo"> <img src="Logos/Logo_Tools/Final/label-map.svg" width="64" alt="Label Map logo"> <img src="Logos/Logo_Tools/Final/reports.svg" width="64" alt="Reports logo">
+
 # Acknowledgments
 Original logos and branding vision by the amazing [Rachael Marr](https://www.rachaelmarr.com/). 
 
