@@ -86,5 +86,6 @@ board opened on.
 
 `Ideation/svg/` holds every idea's drawing as it was on the canvas, named by its code (`A0.svg` to `A56.svg`,
 `G0.svg` to `G21.svg`, `L0.svg` to `L8.svg`, `R0.svg` to `R12.svg`). These are working drawings, not optimised; the
-masters are in `Final/`. A41, A42, A45 and A46 were withdrawn and have no file. Round 1's Direction 1 marks are A0, G0, L0 and R0. Its Direction 2 and 3 marks were never
-given codes and are saved as `direction-2-<tool>.svg` and `direction-3-<tool>.svg`.
+masters are in `Final/`. A41, A42, A45 and A46 were withdrawn and have no file. Round 1's Direction 1 marks are A0,
+G0, L0 and R0. Its Direction 2 and 3 marks were never given codes and are saved as `direction-2-<tool>.svg` and
+`direction-3-<tool>.svg`.
