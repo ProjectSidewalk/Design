@@ -55,5 +55,21 @@ on the ones shortlisted. The issue records each round and the reasoning behind e
    (A25, A26).
 7. **Gallery pin color**: orange versus asphalt pin (G20, G21).
 
-The rounds were drawn on a design canvas outside GitHub. The intermediate drawings are not yet archived here
-(`Ideation/` is reserved for them).
+The rounds were drawn on a design canvas outside GitHub. `Ideation/` archives them, one contact sheet per round:
+
+- [`round-1-directions.png`](Ideation/round-1-directions.png)
+- [`round-2-ideas.png`](Ideation/round-2-ideas.png)
+- [`round-3-riffs-on-picks.png`](Ideation/round-3-riffs-on-picks.png)
+- [`round-4-shortlist.png`](Ideation/round-4-shortlist.png)
+- [`round-5-frames-and-accessscore.png`](Ideation/round-5-frames-and-accessscore.png)
+- [`round-6-accessscore-patchwork.png`](Ideation/round-6-accessscore-patchwork.png)
+- [`round-7-gallery-pin-color.png`](Ideation/round-7-gallery-pin-color.png)
+
+Each sheet lays out that round's artboards as they sat on the canvas, rendered at 2x. Some boards (round 1's
+family overview and the sidebar boards) could swap candidates on the canvas; the sheets show the candidates each
+board opened on.
+
+`Ideation/svg/` holds every idea's drawing as it was on the canvas, named by its code (`A0.svg` to `A26.svg`,
+`G0.svg` to `G21.svg`, `L0.svg` to `L8.svg`, `R0.svg` to `R12.svg`). These are working drawings, not optimised; the
+masters are in `Final/`. Round 1's Direction 1 marks are A0, G0, L0 and R0. Its Direction 2 and 3 marks were never
+given codes and are saved as `direction-2-<tool>.svg` and `direction-3-<tool>.svg`.
