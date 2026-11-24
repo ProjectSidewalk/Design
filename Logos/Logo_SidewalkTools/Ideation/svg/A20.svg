@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<clipPath id="c"><circle cx="32" cy="32" r="28"></circle></clipPath>
+<g clip-path="url(#c)"><g stroke="#fff" stroke-width="3" stroke-linejoin="round"><path fill="#78C8AA" d="M32 32L27 16L21 -4L70 -4L70 19L46 22Z"></path><path fill="#FAD68A" d="M32 32L46 22L70 19L70 66L58 66L44 44Z"></path><path fill="#EA734D" d="M32 32L44 44L58 66L19 66L24 46Z"></path><path fill="#78C8AA" d="M32 32L24 46L19 66L-4 66L-4 37L14 30Z"></path><path fill="#FAD68A" d="M32 32L14 30L-4 37L-4 -4L21 -4L27 16Z"></path></g></g>
+<circle cx="32" cy="32" r="12" fill="#fff"></circle><g transform="translate(9.4 9.79) scale(0.1484)" fill="#2D2A3F"><path d="M166,170.2c-3.9,2.6-8.7,4.2-13.7,4.2-13.6,0-24.7-11-24.7-24.7s1.5-9.8,4.2-13.7l-30.4-30.4c-10.3,11.8-16.5,27.3-16.5,44.2,0,37.2,30.2,67.4,67.4,67.4s32.3-6.2,44.2-16.5l-30.4-30.4Z"></path><path d="M138.3,129.3c4-2.7,8.8-4.3,13.9-4.3,13.6,0,24.7,11,24.7,24.7s-1.6,10-4.3,13.9l30.4,30.4c10.4-11.8,16.6-27.3,16.6-44.3,0-37.2-30.2-67.4-67.4-67.4s-32.5,6.3-44.3,16.6l30.4,30.4Z"></path></g>
+</svg>

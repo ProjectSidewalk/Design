@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<rect x="14" y="9" width="44" height="36" rx="6" fill="#2D2A3F"></rect><rect x="3.5" y="16.5" width="49" height="41" rx="8.5" fill="#fff"></rect><rect x="6" y="19" width="44" height="36" rx="6" fill="#2D2A3F"></rect><rect x="11" y="24" width="34" height="26" rx="1" fill="#fff"></rect><clipPath id="p"><rect x="11" y="24" width="34" height="26" rx="1"></rect></clipPath>
+<g clip-path="url(#p)"><path fill="#78C8AA" d="M11 50V35.5H27.2L13.6 50Z"></path><path fill="#FAD68A" d="M15.6 50L28.4 35.5H31.6L35.4 50Z"></path><path fill="none" stroke="#2D2A3F" stroke-width="0.9" d="M19.1 46H34.4M23.2 41.4H33.2M26 38.2H32.3"></path><path fill="#2D2A3F" d="M37.4 50L32.9 35.5H45V50Z"></path><path fill="none" stroke="#fff" stroke-width="1.1" stroke-dasharray="2.6 2" d="M43.5 50L37.6 37"></path></g>
+<g transform="translate(11.46 25.29) scale(0.47)"><path fill="#EA734D" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" d="M32 43L21.94 27.55A12 12 0 1 1 42.06 27.55Z"></path><circle cx="32" cy="21" r="4.6" fill="#fff"></circle></g>
+</svg>

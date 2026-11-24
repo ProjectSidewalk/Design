@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<rect x="25" y="5" width="14" height="54" rx="2" fill="#2D2A3F"></rect>
+<rect x="5" y="25" width="54" height="14" rx="2" fill="#2D2A3F"></rect>
+<g fill="#fff">
+<rect x="27.2" y="15.5" width="2.4" height="7"></rect><rect x="30.8" y="15.5" width="2.4" height="7"></rect><rect x="34.4" y="15.5" width="2.4" height="7"></rect>
+<rect x="27.2" y="41.5" width="2.4" height="7"></rect><rect x="30.8" y="41.5" width="2.4" height="7"></rect><rect x="34.4" y="41.5" width="2.4" height="7"></rect>
+<rect x="15.5" y="27.2" width="7" height="2.4"></rect><rect x="15.5" y="30.8" width="7" height="2.4"></rect><rect x="15.5" y="34.4" width="7" height="2.4"></rect>
+<rect x="41.5" y="27.2" width="7" height="2.4"></rect><rect x="41.5" y="30.8" width="7" height="2.4"></rect><rect x="41.5" y="34.4" width="7" height="2.4"></rect>
+</g>
+<circle cx="16.5" cy="16.5" r="5.5" fill="#78C8AA"></circle>
+<circle cx="16.5" cy="47.5" r="5.5" fill="#FAD68A"></circle>
+<circle cx="47.5" cy="47.5" r="5.5" fill="#EA734D"></circle>
+<path fill="#2D2A3F" d="M48 22.5L42.45 15.26A7 7 0 1 1 53.55 15.26Z"></path>
+<circle cx="48" cy="11" r="2.6" fill="#fff"></circle>
+</svg>

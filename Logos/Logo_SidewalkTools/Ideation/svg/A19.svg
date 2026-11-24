@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 2 64 64">
+<g stroke="#fff" stroke-width="3" stroke-linejoin="round"><path fill="#78C8AA" d="M8 14L30 8L34 26L16 34Z"></path><path fill="#FAD68A" d="M30 8L54 12L52 30L34 26Z"></path><path fill="#EA734D" d="M16 34L34 26L40 46L22 56L10 46Z"></path><path fill="#78C8AA" d="M34 26L52 30L56 48L40 46Z"></path><path fill="#FAD68A" d="M22 56L40 46L56 48L50 58L30 60Z"></path></g>
+<circle cx="34" cy="26" r="12" fill="#fff"></circle><g transform="translate(11.4 3.79) scale(0.1484)" fill="#2D2A3F"><path d="M166,170.2c-3.9,2.6-8.7,4.2-13.7,4.2-13.6,0-24.7-11-24.7-24.7s1.5-9.8,4.2-13.7l-30.4-30.4c-10.3,11.8-16.5,27.3-16.5,44.2,0,37.2,30.2,67.4,67.4,67.4s32.3-6.2,44.2-16.5l-30.4-30.4Z"></path><path d="M138.3,129.3c4-2.7,8.8-4.3,13.9-4.3,13.6,0,24.7,11,24.7,24.7s-1.6,10-4.3,13.9l30.4,30.4c10.4-11.8,16.6-27.3,16.6-44.3,0-37.2-30.2-67.4-67.4-67.4s-32.5,6.3-44.3,16.6l30.4,30.4Z"></path></g>
+</svg>
