@@ -295,15 +295,29 @@ def load_shapes(svg_path):
     return view_box, shapes
 
 
-def find_wheel(shapes, wedge_box):
-    """Return the wheel's (center, outer radius).
+def circumcircle(a, b, c):
+    """(center, radius) of the circle through three points, or None if they are collinear."""
+    d = 2 * (a[0] * (b[1] - c[1]) + b[0] * (c[1] - a[1]) + c[0] * (a[1] - b[1]))
+    if abs(d) < 1e-9:
+        return None
+    sq = [p[0] ** 2 + p[1] ** 2 for p in (a, b, c)]
+    ux = (sq[0] * (b[1] - c[1]) + sq[1] * (c[1] - a[1]) + sq[2] * (a[1] - b[1])) / d
+    uy = (sq[0] * (c[0] - b[0]) + sq[1] * (a[0] - c[0]) + sq[2] * (b[0] - a[0])) / d
+    return (ux, uy), math.dist((ux, uy), a)
 
-    The wheel is one dark shape (horizontal logo) or two halves split by the spoke (square
-    logos). Its pieces are the dark shapes with a square bounding box, at least a third as wide as
-    the wedges together, that overlap the wedges. Letters are too small and the body isn't square.
+
+def find_wheel(shapes, wedge_box):
+    """Return the wheel's (center, outer radius), fitted to the curves of its rim.
+
+    The wheel pieces are the dark shapes with a square bounding box, at least a third as wide as
+    the wedges together, that overlap the wedges; letters are too small and the body isn't square.
+    In the square logos that is two halves split by the spoke. In the horizontal logo it is only
+    the C-shaped left half (the right half is part of the body), so the pieces' bounding box is
+    NOT the circle. Instead, fit a circle to each curve and keep the largest: the rim's arcs all
+    share that circle, and the hub's arcs and the rounded corners are much smaller.
     """
     wx0, wy0, wx1, wy1 = wedge_box
-    halves = []
+    pieces = []
     for fill, subpaths, _ in shapes:
         if fill not in DARK_FILLS:
             continue
@@ -313,16 +327,43 @@ def find_wheel(shapes, wedge_box):
         big = w > 0.33 * (wx1 - wx0)
         overlaps = x0 < wx1 and x1 > wx0 and y0 < wy1 and y1 > wy0
         if square and big and overlaps:
-            halves.append((x0, y0, x1, y1))
-    if len(halves) not in (1, 2):
-        raise ValueError(f"expected the wheel in one or two pieces, found {len(halves)} candidates")
-    x0 = min(b[0] for b in halves)
-    y0 = min(b[1] for b in halves)
-    x1 = max(b[2] for b in halves)
-    y1 = max(b[3] for b in halves)
-    if abs((x1 - x0) - (y1 - y0)) > 0.01 * (x1 - x0):
-        raise ValueError("the wheel's pieces don't make a circle")
-    return ((x0 + x1) / 2, (y0 + y1) / 2), (x1 - x0) / 2
+            pieces.append((subpaths, (x0, y0, x1, y1)))
+    if len(pieces) not in (1, 2):
+        raise ValueError(f"expected the wheel in one or two pieces, found {len(pieces)} candidates")
+
+    arcs = []
+    for subpaths, _ in pieces:
+        for start, segs, _ in subpaths:
+            prev = start
+            for seg in segs:
+                if seg[0] == "C":
+                    mid = cubic_point(prev, seg[1], seg[2], seg[3], 0.5)
+                    circle = circumcircle(prev, mid, seg[3])
+                    if circle:
+                        arcs.append(circle)
+                prev = seg[-1]
+    radius = max(r for _, r in arcs)
+    rim = [c for c, r in arcs if r > 0.98 * radius]
+    if len(rim) < 2:
+        raise ValueError("could not find the wheel's rim")
+    center = (sum(c[0] for c in rim) / len(rim), sum(c[1] for c in rim) / len(rim))
+    if max(math.dist(c, center) for c in rim) > 0.02 * radius:
+        raise ValueError("the wheel's rim arcs don't share a center")
+    # The three-point fit of a Bezier arc runs slightly small, so take the radius as the farthest
+    # point of the wheel from that center: the rim is the outermost part of every piece.
+    fitted = radius
+    radius = 0.0
+    for subpaths, _ in pieces:
+        for start, segs, _ in subpaths:
+            prev = start
+            for seg in segs:
+                pts = ([seg[1]] if seg[0] == "L" else
+                       [cubic_point(prev, seg[1], seg[2], seg[3], k / 64) for k in range(65)])
+                radius = max(radius, *(math.dist(p, center) for p in pts))
+                prev = seg[-1]
+    if abs(radius - fitted) > 0.01 * fitted:
+        raise ValueError("a wheel piece extends outside the fitted rim")
+    return center, radius
 
 
 def hex_of(rgb_percent):
