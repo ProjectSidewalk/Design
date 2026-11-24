@@ -19,13 +19,15 @@ This is the Project Sidewalk repo for design assets.
 ## Project Sidewalk Icon
 ![image](https://user-images.githubusercontent.com/1621749/194599443-8e03a47e-60b3-44b5-aa03-a4b796c13fe0.png)
 
-| Color Name                    | Hex Code   |
-| :---------------------------- | :--------- |
-| **Hero Color** | `#2B2A3F`  |
-| Orange (Pantone 7417)| `#EB734D`  |
-| Yellow (Pantone 7403)| `#FBD78B`  |
-| Green (Pantone 7472)| `#78B9AB`  |
-| Gray (Pantone 435) | `#D0CBDB`  |
+The hex codes are the 500 level of each color in our design-system tokens, which SidewalkWebpage serves in `frontend/css/main.css` ([Design#5](https://github.com/ProjectSidewalk/Design/issues/5)). The Pantone numbers are from the original brand guide, [PS_brand_guidelines.pdf](PS_brand_guidelines.pdf) (2017), whose hex codes differ from the tokens by at most two units per channel, too little to see.
+
+| Color Name | Token | Hex Code | Pantone |
+| :--- | :--- | :--- | :--- |
+| **Hero Color** (navy) | `--color-asphalt-500` | `#2D2A3F` | 5255 |
+| Orange | `--color-orange-500` | `#EB724E` | 7417 |
+| Yellow | `--color-banana-500` | `#FBD98C` | 7403 |
+| Green | `--color-pine-500` | `#78C9AB` | 7472 |
+| Gray | (none) | `#DCDBDB` | 435 |
 
 
 
@@ -43,26 +45,46 @@ This is the Project Sidewalk repo for design assets.
 ![image](https://user-images.githubusercontent.com/1621749/190520904-8769ddc3-223f-4e69-b89e-b14eff5bf899.png) #FFFFF | White<br/>
 
 # Logos
-We have two primary logo forms: the landscape logo and the circular logo. We have pure white, pure black, and colored versions.
+We have two primary logo forms: the landscape logo and the circular logo. Each comes in full color and in six single colors.
 
 ## Landscape logo
 
 <img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Horizontal/v2/PS_Logo_Horizontal_2393x624.png" width="400">
 
 ## Circular logo
-For the circular logo, we have with and without text as well as white, black, and colored versions. 
+The circular logo comes with curved text, with horizontal text below it, or with no text.
 
 <img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/v2/ProjectSidewalkLogo_WithCurvedText_3600x3600.png" width="200">
 
 <img src="https://github.com/ProjectSidewalk/Design/blob/master/Logos/Logo_Square/RGB/v2/ProjectSidewalkLogo_NoText_3240x3240.png" width="200">
 
-## Landscape logo
+## Where the files are
+The v2 logos are in [Logos/Logo_Horizontal/v2](Logos/Logo_Horizontal/v2) and [Logos/Logo_Square/RGB/v2](Logos/Logo_Square/RGB/v2):
 
+- `*.ai`: the Illustrator masters.
+- `<name>.svg` and `<name>_<width>x<height>.png`: full color.
+- `Monochrome/<Color>/<name>_<Color>.svg` and `.png`: single color, in White, Black, Navy, Orange, Yellow and Green.
+
+In the single-color versions, a thin transparent gap separates the wheel from the sidewalk below it, so the wheel still reads as a circle.
+
+Every SVG and every single-color PNG is generated from the `.ai` masters by [Logos/build_v2_logos.py](Logos/build_v2_logos.py). After you change a master, rerun the script instead of editing the outputs by hand.
+
+## Which single color to use
+Use the full-color logo whenever you can. When you need a single color, pick one by background:
+
+| Single color | Use it on | Contrast |
+| :--- | :--- | :--- |
+| Navy | White or light backgrounds. It's the preferred single color, and the brand guide's choice for screen printing. | 13.9:1 on white |
+| Black | Light backgrounds, when navy isn't possible. | 21:1 on white |
+| White | Navy, dark backgrounds or photos. | 13.9:1 on navy |
+| Orange | Light backgrounds, at large sizes only. | 3.0:1 on white |
+| Yellow | Navy or black backgrounds only. It nearly disappears on white. | 10.2:1 on navy |
+| Green | Navy or black backgrounds only. | 7.1:1 on navy |
 
 ## Tool logos
-Each tool (AccessScore, Gallery, Label Map and Reports) has its own mark, drawn as one family from the logo's colors and wheel. The SVG masters, PNG exports and the design notes are in [Logos/Logo_Tools](Logos/Logo_Tools).
+Each tool (AccessScore, Gallery, Label Map and Reports) has its own mark, drawn as one family from the logo's colors and wheel. The SVG masters, PNG exports and the design notes are in [Logos/Logo_SidewalkTools](Logos/Logo_SidewalkTools).
 
-<img src="Logos/Logo_Tools/Final/access-score.svg" width="64" alt="AccessScore logo"> <img src="Logos/Logo_Tools/Final/gallery.svg" width="64" alt="Gallery logo"> <img src="Logos/Logo_Tools/Final/label-map.svg" width="64" alt="Label Map logo"> <img src="Logos/Logo_Tools/Final/reports.svg" width="64" alt="Reports logo">
+<img src="Logos/Logo_SidewalkTools/Final/access-score.svg" width="64" alt="AccessScore logo"> <img src="Logos/Logo_SidewalkTools/Final/gallery.svg" width="64" alt="Gallery logo"> <img src="Logos/Logo_SidewalkTools/Final/label-map.svg" width="64" alt="Label Map logo"> <img src="Logos/Logo_SidewalkTools/Final/reports.svg" width="64" alt="Reports logo">
 
 # Acknowledgments
 Original logos and branding vision by the amazing [Rachael Marr](https://www.rachaelmarr.com/). 
