@@ -86,11 +86,18 @@ Each tool (AccessScore, Gallery, Label Map and Reports) has its own mark, drawn 
 
 <img src="Logos/Logo_SidewalkTools/Final/access-score.svg" width="64" alt="AccessScore logo"> <img src="Logos/Logo_SidewalkTools/Final/gallery.svg" width="64" alt="Gallery logo"> <img src="Logos/Logo_SidewalkTools/Final/label-map.svg" width="64" alt="Label Map logo"> <img src="Logos/Logo_SidewalkTools/Final/reports.svg" width="64" alt="Reports logo">
 
+# Mobility-aid icons
+Five icons for the mobility aids in our research on personalized accessibility maps: walking cane, walker, mobility scooter, manual wheelchair and motorized wheelchair. Chu Li designed them for her CHI 2025 paper, [Accessibility for Whom?](https://doi.org/10.1145/3706598.3713421) The single-color PNGs (white and navy), the credit and license, and how to recolor them are in [Icons/MobilityAids](Icons/MobilityAids).
+
+<img src="Icons/MobilityAids/MobilityAids_Preview.png" width="600" alt="Five line icons in a row: a walking cane, a walker, a mobility scooter, a manual wheelchair and a motorized wheelchair">
+
 # Acknowledgments
 Original logos and branding vision by the amazing [Rachael Marr](https://www.rachaelmarr.com/). 
 
 Project Sidewalk's original UI was designed and developed by [Kotaro Hara](https://kotarohara.com/) and Jon E. Froehlich as part of Kotaro's [PhD dissertation](https://makeabilitylab.cs.washington.edu/media/publications/Hara_ScalableMethodsToCollectAndVisualizeSidewalkAccessibilityDataForPeopleWithMobilityImpairments_2016.pdf)
 
 The new labeling buttons and color palette (introduced in 2021) were designed by the marvelous MHCI+D student [Duanhao Zhang](https://www.linkedin.com/in/danieldhzhang/)
+
+The mobility-aid icons were designed by Chu Li for her CHI 2025 paper, [Accessibility for Whom?](https://doi.org/10.1145/3706598.3713421), which is licensed under CC BY 4.0. The versions in [Icons/MobilityAids](Icons/MobilityAids) are adapted from the paper's Figure 1.
 
 Others have since contributed on re-mixing logos for city-specific deployments including Liga Peatonal for Mexico-based deployments
