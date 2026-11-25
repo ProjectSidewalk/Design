@@ -12,7 +12,7 @@ The icons were designed by **[Chu Li](https://makeabilitylab.cs.washington.edu/m
 The paper is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). When you use these icons, credit Chu Li, cite the paper, and say that the icons were adapted from it.
 
 ## What changed from the original
-In the paper, each icon is a dark line with pale blue fills in the wheels, about 100 pixels across. The versions here were adapted from that figure ([Source/Li_CHI2025_Figure1.png](Source/Li_CHI2025_Figure1.png)) by the Project Sidewalk team in November 2026:
+In the figure, each icon is a dark line with pale fills in the wheels. The versions here were adapted from it by the Project Sidewalk team in November 2026. They are cut from the 4096-pixel-wide image of the figure that Chu used in her CHI 2025 talk slides ([Source/Li_CHI2025_Figure1_4096px.jpg](Source/Li_CHI2025_Figure1_4096px.jpg)), where each icon is about 230 pixels across. The figure as it appears in the paper, where each icon is about 100 pixels across, is in [Source/Li_CHI2025_Figure1.png](Source/Li_CHI2025_Figure1.png) for reference. What changed:
 
 - **One color on a transparent background.** The pale fills are gone, so an icon can take any color.
 - **Larger, with a cleaned-up line.** Each icon is 480 × 480 pixels.
@@ -29,10 +29,10 @@ The shapes and proportions are Chu's. Nothing was redrawn.
 | Manual wheelchair | [MobilityAid_ManualWheelchair_White.png](White/MobilityAid_ManualWheelchair_White.png) | [MobilityAid_ManualWheelchair_Navy.png](Navy/MobilityAid_ManualWheelchair_Navy.png) |
 | Motorized wheelchair | [MobilityAid_MotorizedWheelchair_White.png](White/MobilityAid_MotorizedWheelchair_White.png) | [MobilityAid_MotorizedWheelchair_Navy.png](Navy/MobilityAid_MotorizedWheelchair_Navy.png) |
 
-Every PNG here is generated from the source figure by [build_mobility_aid_icons.py](build_mobility_aid_icons.py). To add a color, add it to `COLORS` in that script and rerun it; don't edit the PNGs by hand.
+Every PNG here is generated from the 4096-pixel source image by [build_mobility_aid_icons.py](build_mobility_aid_icons.py). To add a color, add it to `COLORS` in that script and rerun it; don't edit the PNGs by hand.
 
 ## Using them
-**At what size.** The icons come from a small figure, not from vector artwork, so the line is slightly uneven if you look closely at full size. They look clean at about 240 pixels and below. For large print, use Chu's original vector artwork instead.
+**At what size.** The icons come from an image of the figure, not from vector artwork. Each is about 230 pixels across in the source and about twice that here, and they look clean up to their full size of 480 pixels. Don't enlarge them beyond that. We have not found a vector version: the figure is an image in the paper and in the talk slides. If you need the icons larger, ask Chu whether she has the original artwork.
 
 **In any color on the web.** Use a white icon as a CSS mask and set the color with `background`. Give the element a role and a label so that screen readers announce it:
 

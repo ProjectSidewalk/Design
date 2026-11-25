@@ -9,12 +9,15 @@ by Chu Li for Figure 1 of:
   "Accessibility for Whom? Perceptions of Sidewalk Barriers Across Disability Groups and Implications for
   Designing Personalized Maps." CHI '25. https://doi.org/10.1145/3706598.3713421  (CC BY 4.0)
 
-Source/Li_CHI2025_Figure1.png is that figure exactly as it is embedded in the paper's PDF (1786 x 480). There each
-icon is about 100 px across, drawn as a dark line with pale blue fills in the wheels. This script cuts each one out
-and turns it into a one-color shape on a transparent background:
+Source/Li_CHI2025_Figure1_4096px.jpg is that figure at 4096 px wide, the image Chu placed in her CHI 2025 talk
+slides (the figure fills the middle band of the image; the rest is white). There each icon is about 230 px across,
+drawn as a dark line with pale fills in the wheels. Source/Li_CHI2025_Figure1.png is the same figure as it is
+embedded in the paper's PDF (1786 x 480), kept for reference; this script does not read it.
+
+This script cuts each icon out of the 4096 px image and turns it into a one-color shape on a transparent background:
 
   1. keep the dark line and drop the pale fills, so the icon is a single color;
-  2. enlarge it five times, blur it slightly and re-sharpen the edge, which gives a clean line instead of pixels;
+  2. enlarge it two times, blur it slightly and re-sharpen the edge, which removes the JPEG noise along the line;
   3. center it in a 480 x 480 transparent square with a 12 px margin;
   4. save it once per color in COLORS.
 
@@ -34,15 +37,15 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SOURCE = os.path.join(HERE, "Source", "Li_CHI2025_Figure1.png")
+SOURCE = os.path.join(HERE, "Source", "Li_CHI2025_Figure1_4096px.jpg")
 
-# The edge of each icon's ink in the source figure: (left, top, right, bottom), in the order the icons are shown.
+# The edge of each icon's ink in the source image: (left, top, right, bottom), in the order the icons are shown.
 BOXES = {
-    "WalkingCane": (7, 340, 110, 431),
-    "Walker": (13, 4, 101, 98),
-    "MobilityScooter": (175, 104, 271, 192),
-    "ManualWheelchair": (8, 160, 103, 266),
-    "MotorizedWheelchair": (176, 257, 276, 362),
+    "WalkingCane": (53, 1414, 288, 1622),
+    "Walker": (66, 648, 268, 865),
+    "MobilityScooter": (435, 876, 656, 1078),
+    "ManualWheelchair": (54, 1004, 272, 1246),
+    "MotorizedWheelchair": (437, 1225, 666, 1464),
 }
 
 # Project Sidewalk's navy is --color-asphalt-500 in the design-system tokens (see the top-level README).
@@ -50,18 +53,19 @@ COLORS = {"White": (255, 255, 255), "Navy": (45, 42, 63)}
 
 SIDE = 480      # output size in pixels
 MARGIN = 12     # clear space on every side
-SCALE = 5       # how much the source crop is enlarged before the edge is re-sharpened
+SCALE = 2       # how much the source crop is enlarged before the edge is re-sharpened
+PAD = 8         # source pixels kept around each box, so the blur has room at the edges
 
 
 def icon_alpha(figure, box):
     """Return one icon as a SIDE x SIDE "L" image: 255 where the icon is, 0 where it is clear.
 
     Args:
-        figure: the source figure as an RGB PIL image.
-        box: (left, top, right, bottom) of the icon's ink in the figure.
+        figure: the source image as an RGB PIL image.
+        box: (left, top, right, bottom) of the icon's ink in that image.
     """
     x0, y0, x1, y1 = box
-    gray = np.asarray(figure.crop((x0 - 4, y0 - 4, x1 + 5, y1 + 5)).convert("L"), dtype=float)
+    gray = np.asarray(figure.crop((x0 - PAD, y0 - PAD, x1 + PAD, y1 + PAD)).convert("L"), dtype=float)
 
     # Darkness from 0 (white) to 1 (black). The line is dark and the wheel fills are pale, so a threshold between
     # them keeps the line and drops the fills.
@@ -69,20 +73,20 @@ def icon_alpha(figure, box):
 
     big = Image.fromarray((ink * 255).astype(np.uint8))
     big = big.resize((ink.shape[1] * SCALE, ink.shape[0] * SCALE), Image.BICUBIC)
-    soft = np.asarray(big.filter(ImageFilter.GaussianBlur(2.2)), dtype=float) / 255
+    soft = np.asarray(big.filter(ImageFilter.GaussianBlur(1.1)), dtype=float) / 255
     edge = np.clip((soft - 0.38) / 0.24, 0, 1)
     edge = edge * edge * (3 - 2 * edge)                     # smoothstep: a short, even ramp from clear to solid
+
+    # Trim to the shape itself, so that the icon is centered on its ink and the margin is exact.
+    rows, cols = np.where(edge > 0.02)
+    edge = edge[rows.min():rows.max() + 1, cols.min():cols.max() + 1]
 
     h, w = edge.shape
     k = (SIDE - 2 * MARGIN) / max(w, h)
     shape = Image.fromarray((edge * 255).astype(np.uint8)).resize((round(w * k), round(h * k)), Image.LANCZOS)
-
-    # Paste the shape through its own alpha. That squares the alpha along the edge, which trims the soft fringe.
-    solid = Image.new("RGBA", shape.size, (255, 255, 255, 255))
-    solid.putalpha(shape)
-    canvas = Image.new("RGBA", (SIDE, SIDE), (255, 255, 255, 0))
-    canvas.paste(solid, ((SIDE - shape.width) // 2, (SIDE - shape.height) // 2), solid)
-    return canvas.getchannel("A")
+    canvas = Image.new("L", (SIDE, SIDE), 0)
+    canvas.paste(shape, ((SIDE - shape.width) // 2, (SIDE - shape.height) // 2))
+    return canvas
 
 
 def main():
