@@ -5,7 +5,7 @@
 Five icons for the mobility aids in Project Sidewalk's research on personalized accessibility maps: walking cane, walker, mobility scooter, manual wheelchair and motorized wheelchair. Each shows the aid, not a person using it.
 
 ## Credit
-The icons were designed by **Chu Li** for Figure 1 of her CHI 2025 paper:
+The icons were designed by **[Chu Li](https://makeabilitylab.cs.washington.edu/member/chuli/)** for Figure 1 of her CHI 2025 paper:
 
 > Chu Li, Rock Yuren Pang, Delphine Labbé, Yochai Eisenberg, Maryam Hosseini, and Jon E. Froehlich. 2025. [Accessibility for Whom? Perceptions of Sidewalk Barriers Across Disability Groups and Implications for Designing Personalized Maps](https://doi.org/10.1145/3706598.3713421). In *CHI Conference on Human Factors in Computing Systems (CHI '25)*, April 26-May 1, 2025, Yokohama, Japan. ACM, New York, NY, USA, 19 pages.
 
