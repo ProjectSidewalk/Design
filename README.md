@@ -94,6 +94,11 @@ Five icons for the mobility aids in our research on personalized accessibility m
 # Acknowledgments
 Original logos and branding vision by the amazing [Rachael Marr](https://www.rachaelmarr.com/). 
 
+The wheelchair figure in the logo comes from the [Accessible Icon Project](https://accessibleicon.org/), whose
+public-domain icon by Sara Hendren, Brian Glenney and Tim Ferguson Sauder redraws the International Symbol of Access to
+show the person as active, not passive. Our mark combines it with a sidewalk, as the original brand guide notes
+([PS_brand_guidelines.pdf](PS_brand_guidelines.pdf), page 2).
+
 Project Sidewalk's original UI was designed and developed by [Kotaro Hara](https://kotarohara.com/) and Jon E. Froehlich as part of Kotaro's [PhD dissertation](https://makeabilitylab.cs.washington.edu/media/publications/Hara_ScalableMethodsToCollectAndVisualizeSidewalkAccessibilityDataForPeopleWithMobilityImpairments_2016.pdf)
 
 The new labeling buttons and color palette (introduced in 2021) were designed by the marvelous MHCI+D student [Duanhao Zhang](https://www.linkedin.com/in/danieldhzhang/)
